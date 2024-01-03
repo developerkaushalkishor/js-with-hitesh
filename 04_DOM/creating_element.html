@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Element in JS</title>
+</head>
+
+<body style="background-color: #202020; color: white;">
+
+</body>
+
+<script>
+    const div = document.createElement('div');
+    div.className = 'main';
+    div.id = 'myId';
+    div.innerText = 'text form innerText ';
+    div.textContent = 'I am div from JS ';
+    div.setAttribute('mytitle', 'title form js');
+    div.style.background = "black";
+    div.style.padding = "10px";
+    div.style.borderRadius = "0.5rem";
+    const addText = document.createTextNode('Text form TEXT NODE');
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+
+    console.log(div);
+
+    let createDiv = () => {
+        for (let i = 1; i <= 10; i++) {
+            const div = document.createElement('div');
+            div.className = 'main';
+            div.id = 'myId' + i; // Add a unique identifier for each div
+            div.innerText = 'text form innerText ';
+            div.textContent = 'I am div from JS ';
+            div.setAttribute('mytitle', 'title form js');
+            div.style.background = "black";
+            div.style.padding = "10px";
+            div.style.margin = '5px'
+            div.style.borderRadius = "0.5rem";
+            const addText = document.createTextNode(`Text form TEXT NODE ${i}`);
+            div.appendChild(addText);
+            document.body.appendChild(div);
+            console.log(div);
+        }
+    }
+    createDiv()
+
+</script>
+
+</html>

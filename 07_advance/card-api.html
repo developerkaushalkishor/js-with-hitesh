@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container bg-dark">
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                <p class="followers">
+                    00
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const img = document.querySelector('.card-img-top')
+    const name = document.querySelector('.card-title')
+    const bio = document.querySelector('.card-text')
+    const followers = document.querySelector('.followers')
+
+    // const url = 'https://api.github.com/users/developerkaushalkishor'
+    const url = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            img.src = data.avatar_url;
+            name.innerText = data.name;
+            bio.innerText = data.bio;
+            followers.innerText = data.followers;
+        }
+    }
+    xhr.send()
+
+</script>
+
+</html>

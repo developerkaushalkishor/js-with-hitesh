@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #252734;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 30px;
+  color: #858792;
+}
+
+.nav-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.logo {
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style: none;
+  margin: 10px 30px;
+  font-size: large;
+}
+
+.hire-button button {
+  background-color: #252734;
+  color: white;
+  padding: 17px 47px;
+  border: 1px solid white;
+  border-radius: 2rem;
+  font-size: large;
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+
+.hire-button button:hover {
+  background-color: #2e303d;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: fit-content;
+}
+
+.hero-child img {
+  width: 70%;
+}
+
+.btn {
+  padding: 17px 35px;
+  border: 1px solid #ffffff40;
+  color: white;
+  border-radius: 3rem;
+  background: none;
+  font-size: medium;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2e303d;
+}

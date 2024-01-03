@@ -1,0 +1,18 @@
+<= = == === >= ++ => =>> != -> ->>
+-------------------------- JS full In depth course --------------------------------
+https://github.com/hiteshchoudhary/js-hindi-youtube/tree/main
+
+Project #1 Color Scheme Switcher 
+URL: https://stackblitz.com/edit/dom-project-chaiaurcode-dhzbyb?file=1-colorChanger%2Findex.html
+
+Project #2 BMI Calculator
+URL: https://stackblitz.com/edit/dom-project-chaiaurcode-dhzbyb?file=2-BMICalculator%2Findex.html
+
+Project #3 DigitalClock
+URL: https://stackblitz.com/edit/dom-project-chaiaurcode-dhzbyb?file=3-DigitalClock%2Findex.html
+
+Project #4 Number पता करें।
+URL: https://dom-project-chaiaurcode-dhzbyb.stackblitz.io/4-GuessTheNumber/index.html
+
+Project #5 Unlimitted Color Changer 
+URL: https://stackblitz.com/edit/dom-project-chaiaurcode-dhzbyb?file=6-unlimitedColors%2Findex.html

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and remove dom Elements</title>
+</head>
+
+<body style="background-color: #202020; color: white;">
+
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function createLi(langName) {
+        const li = document.createElement('li');
+        // li.innerText = `${langName}`;
+        li.innerText = langName;
+        document.querySelector('.language').appendChild(li);
+    }
+    createLi("HTML");
+
+    // creating element in optimize way
+
+    function optiLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    optiLang("Python");
+    optiLang("Java");
+
+    //EDIT 
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    // secondLang.innerHTML = "Changed"; // we will never use this method in large scale project
+
+    const newLi = document.createElement('li');
+    newLi.textContent = 'TypeScript';
+
+    secondLang.replaceWith(newLi);
+
+    // Other Edit
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>Mojo</li>";
+
+    // REMOVE element
+
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+
+
+    const firstgLang = document.querySelector('li:first-child');
+    firstgLang.remove();
+
+
+</script>
+
+</html>

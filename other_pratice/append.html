@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mycls">
+        <div>
+            <h1>This is a first element</h1>
+        </div>
+        <div>
+            <h1>This is a second element</h1>
+        </div>
+        <div>
+            <h1>This is a third element</h1>
+        </div>
+        <div>
+            <h1>This is a fourth element</h1>
+        </div>
+    </div>
+
+
+    <script>
+        // const myElm = document.createDocumentFragment();
+        // const p = myElm.appendChild(document.createElement("div")).appendChild(document.createElement("p"))
+        // p.textContent = "from js"
+
+        // document.body.appendChild(myElm);
+
+        // const h1 = document.querySelectorAll('h1');
+        // console.log(h1);
+        // h1.forEach((h1) => {
+        //     const p = document.createElement('p');
+        //     p.innerText = 'appended';
+        //     h1.appendChild(p);
+        //     // h1.prepend(p)
+        // })
+
+        const h1List = document.querySelectorAll('h1');
+
+        h1List.forEach((h1) => {
+            const p = document.createElement('p');
+            p.innerText = 'appended sanket';
+            h1.insertAdjacentElement('afterend', p); // insertAdjacentElement will append element after the h2 tag not inside h2 😊
+        });
+
+    </script>
+</body>
+
+<script>
+    const displayTime = document.querySelector(".entry-title")
+    const dateTime = document.querySelector(".post-date");
+    displayTime.insertAdjacentElement("afterEnd", dateTime)
+</script>
+
+</html>

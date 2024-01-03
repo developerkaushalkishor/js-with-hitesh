@@ -1,0 +1,155 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": [
+          "Person",
+          "Organization"
+        ],
+        "@id": "https://pharmabharat.com/#person",
+        "name": "Pharma Bharat",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://pharmabharat.com/#logo",
+          "url": "https://pharmabharat.com/wp-content/uploads/2023/11/PharmaBharat-Logo.png",
+          "contentUrl": "https://pharmabharat.com/wp-content/uploads/2023/11/PharmaBharat-Logo.png",
+          "caption": "Pharma Bharat",
+          "inLanguage": "en-US",
+          "width": 1000,
+          "height": 1000
+        },
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://pharmabharat.com/#logo",
+          "url": "https://pharmabharat.com/wp-content/uploads/2023/11/PharmaBharat-Logo.png",
+          "contentUrl": "https://pharmabharat.com/wp-content/uploads/2023/11/PharmaBharat-Logo.png",
+          "caption": "Pharma Bharat",
+          "inLanguage": "en-US",
+          "width": 1000,
+          "height": 1000
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://pharmabharat.com/#website",
+        "url": "https://pharmabharat.com",
+        "name": "Pharma Bharat",
+        "alternateName": "Pharma Life Science HealthCare Job Portal",
+        "publisher": {
+          "@id": "https://pharmabharat.com/#person"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://pharmabharat.com/wp-content/uploads/2023/12/Walk-In-on-21st-Dec-2023-1024x576.jpg",
+        "url": "https://pharmabharat.com/wp-content/uploads/2023/12/Walk-In-on-21st-Dec-2023-1024x576.jpg",
+        "width": 200,
+        "height": 200,
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://pharmabharat.com/?p=3736#webpage",
+        "url": "https://pharmabharat.com/?p=3736",
+        "name": "Wipro Walk In on 21st Dec 2023 for Any Graduate Freshers &amp; Experience | Gurugram, Haryana",
+        "datePublished": "2023-12-20T12:49:11+05:30",
+        "dateModified": "2023-12-20T12:49:11+05:30",
+        "isPartOf": {
+          "@id": "https://pharmabharat.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://pharmabharat.com/wp-content/uploads/2023/12/Walk-In-on-21st-Dec-2023-1024x576.jpg"
+        },
+        "inLanguage": "en-US",
+        "breadcrumb": {
+          "@id": "https://pharmabharat.com/?p=3736#breadcrumb"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://pharmabharat.com/author/kaushalbhai/",
+        "url": "https://pharmabharat.com/author/kaushalbhai/",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://pharmabharat.com/wp-content/litespeed/avatar/05057e4a14fc4243ee531292347412ba.jpg?ver=1702740701",
+          "url": "https://pharmabharat.com/wp-content/litespeed/avatar/05057e4a14fc4243ee531292347412ba.jpg?ver=1702740701",
+          "inLanguage": "en-US"
+        },
+        "sameAs": [
+          "http://pharmabharat.com"
+        ]
+      },
+      {
+        "@type": "JobPosting",
+        "headline": "Wipro Walk In on 21st Dec 2023 for Any Graduate Freshers &amp; Experience | Gurugram, Haryana",
+        "datePublished": "2023-12-20T12:49:11+05:30",
+        "dateModified": "2023-12-20T12:49:11+05:30",
+        "articleSection": "Blog",
+        "author": {
+          "@id": "https://pharmabharat.com/author/kaushalbhai/",
+          "name": "Ignatius Barretto"
+        },
+        "publisher": {
+          "@id": "https://pharmabharat.com/#person"
+        },
+        "description": "Wipro is a global company based in India that offers business process outsourcing, consulting, and information technology services. It was established in 1945",
+        "copyrightYear": "2023",
+        "copyrightHolder": {
+          "@id": "https://pharmabharat.com/#person"
+        },
+        "name": "Wipro Walk In on 21st Dec 2023 for Any Graduate Freshers &amp; Experience | Gurugram, Haryana",
+        "@id": "https://pharmabharat.com/?p=3736#richSnippet",
+        "isPartOf": {
+          "@id": "https://pharmabharat.com/?p=3736#webpage"
+        },
+        "inLanguage": "en-US",
+        "mainEntityOfPage": {
+          "@id": "https://pharmabharat.com/?p=3736#webpage"
+        },
+        "title": "Wipro Walk In on 21st Dec 2023 for Any Graduate Freshers &amp; Experience | Gurugram, Haryana",
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": "10000-50000",
+            "unitText": "YEAR"
+          }
+        },
+        "datePosted": "2023-12-10",
+        "validThrough": "2024-12-10",
+        "employmentType": [
+          "FULL_TIME"
+        ],
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Anthea Pharma",
+          "sameAs": "https://antheapharma.com/",
+          "logo": "https://antheapharma.com/wp-content/uploads/2022/02/Anthea_pharma-1.png"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Anthea Pharma Plant: Plot No.290, Sy.No.219 & 183, Pashamylaram Village, Patancheru Mandal",
+            "addressLocality": "Sangareddy",
+            "addressRegion": "Telangana",
+            "postalCode": "502307",
+            "addressCountry": "India"
+          }
+        },
+        "experienceInPlaceOfEducation": "True",
+        "educationRequirements": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "bachelor degree"
+          }
+        ],
+        "experienceRequirements": {
+          "@type": "OccupationalExperienceRequirements",
+          "monthsOfExperience": "36"
+        }
+      }
+    ]
+  }

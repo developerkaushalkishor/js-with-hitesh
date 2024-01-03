@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #202020; color: white;">
+    <h1>Hello India</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // Learn srtTimeout()
+
+    // const sayKaushal = () => {
+    //     console.log("kaushal");
+    // }
+
+    // const bharat = () => {
+    //     document.querySelector('h1').innerHTML = 'Namaste Bharat'
+    // }
+    // setTimeout(sayKaushal, 2000)
+
+    // const changeText = setTimeout(bharat, 2000)
+
+    // document.querySelector("#stop").addEventListener('click', () => {
+    //     clearTimeout(changeText)
+    //     console.log('STOPPED');
+    // })
+
+    // Learn setInterval()
+
+    // const sayKaushal = () => {
+    //     console.log("Kaushal", Date.now());
+    // }
+
+    // setInterval(sayKaushal, 3000)
+
+    let callMe;
+
+    document.querySelector('#start').addEventListener('click', () => {
+        callMe = setInterval(() => {
+            console.log("Kaushal", Date.now());
+        }, 1000);
+    })
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearInterval(callMe)
+    })
+
+</script>
+
+</html>
